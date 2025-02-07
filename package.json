@@ -9,13 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "@react-jvectormap/core": "^1.0.4",
+    "@react-jvectormap/world": "^1.1.2",
+    "apexcharts": "^4.4.0",
+    "bootstrap": "^5.3.3",
+    "classnames": "^2.5.1",
+    "flag-icons": "^7.3.2",
+    "jsvectormap": "^1.6.0",
+    "material-icons": "^1.13.13",
+    "next": "15.1.6",
     "react": "^19.0.0",
+    "react-apexcharts": "^1.7.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.6"
+    "react-feather": "^2.0.10"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
     "eslint": "^9",
-    "eslint-config-next": "15.1.6",
-    "@eslint/eslintrc": "^3"
+    "eslint-config-next": "15.1.6"
   }
 }
