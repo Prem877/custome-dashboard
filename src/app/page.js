@@ -1,21 +1,29 @@
 'use client';
-import { useState } from 'react';
-import Dashboard from '@/components/dashboard/Dashboard';
+import { useEffect, useState } from 'react';
+// import Dashboard from '@/components/dashboard/Dashboard';
 import Navbar from '@/components/navbar/Navbar';
 import Sidebar from '@/components/sidebar/Sidebar';
-import 'bootstrap';
+// import 'bootstrap';
 
 // styles
 import '@/styles/styles.css';
 import '@/styles/dashboard.css';
+import dynamic from 'next/dynamic';
+
+const Dashboard = dynamic(() => import('@/components/dashboard/Dashboard'), { ssr: false })
 
 
 const Home = () => {
 
   const [showSidebar, setShowSidebar] = useState(false);
+
+  useEffect(() => {
+    require("bootstrap")
+  }, [])
+
   const toggleSidebar = () => {
     if (window.innerWidth < 991) {
-      setShowSidebar(!showSidebar);      
+      setShowSidebar(!showSidebar);
     }
   };
 
